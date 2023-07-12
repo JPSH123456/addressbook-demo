@@ -13,10 +13,5 @@
         sh 'mvn clean install'
       }
     }
-    stage('deploy application'){
-      steps{
-        sh 'cp -r /root/.jenkins/workspace/newjob/target/addressbook-2.0.war /opt/tomcat/apache-tomcat-9.0.78/webapps/'
-      }
-    }
   }
  }
