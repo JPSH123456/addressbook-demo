@@ -16,8 +16,8 @@ pipeline{
         stage('build docker images'){
             steps{
                 sh 'docker build -t jpsh123456/addressbook:2.0 .'
-                docker tag jpsh123456/addressbook:2.0 jpsh123456/addressbook'
-                sh 'docker push jpsh123456/addressbook'
+                sh 'docker tag jpsh123456/addressbook:2.0 jpsh123456/addressbook:2.0'
+                sh 'docker push jpsh123456/addressbook:2.0'
             }
         }
             
