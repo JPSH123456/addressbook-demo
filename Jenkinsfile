@@ -13,6 +13,11 @@ pipeline{
                 sh 'mvn install'
             }
         }
+        stage('build docker images'){
+            steps{
+                sh 'docker build -t addressbook:2.0 .'
+            }
+        }
             
         }
     }
