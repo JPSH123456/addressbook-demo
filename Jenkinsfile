@@ -16,7 +16,7 @@ pipeline{
         stage('build docker images'){
             steps{
                 sh 'docker build -t jpsh123456/addressbook:2.0 .'
-                sh 'docker login -u="jpsh123456" -p="$dockerid" '
+                sh 'docker login -u jpsh123456 -p dockerHubPassword'
                 sh 'docker push jpsh123456/addressbook:2.0'
             }
         }
