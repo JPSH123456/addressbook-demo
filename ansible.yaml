@@ -1,0 +1,9 @@
+---
+- hosts: dev
+  username: jaiprakash
+  become: yes
+  connection: ssh
+  
+  tasks:
+    - name: deploy application
+      command: docker run -itd 8081:8080 jpsh123456/newimageaddressbook:2.0
