@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: dev
   username: jaiprakash
   become: yes
   connection: ssh
