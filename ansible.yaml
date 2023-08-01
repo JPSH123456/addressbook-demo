@@ -3,6 +3,7 @@
   user: jaiprakash
   become: yes
   connection: ssh
+  gather_facts: yes
 
   tasks:
     - name: deploy
